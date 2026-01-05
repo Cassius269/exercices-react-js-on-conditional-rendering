@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="container">
         <h1>hello world</h1>
-        <Notification type='success' message='Ajout réussi' loading={true} />
+        <Notification type='success' message='Ajout échoué' loading={true} />
       </main>
       <Footer />
     </>
