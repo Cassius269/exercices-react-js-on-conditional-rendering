@@ -6,9 +6,9 @@ const Notifications = () => {
     return (
         <>
         <div className="position-absolute" id={styles.divAllNotifications}>
-            <Notification type='success' message='Ajouté avec succès' loading={true} />
-            <Notification type='error' message='Ajout échoué' loading={true} />    
-            <Notification type='info' message='Nouvelle commande effectuée' loading={true} />    
+            <Notification type='success' message='Ajouté avec succès' loading={false} />
+            <Notification type='error' message='Ajout échoué' loading={false} />    
+            <Notification type='info' message='Nouvelle commande effectuée' loading={false} />    
         </div>
         </>
     );

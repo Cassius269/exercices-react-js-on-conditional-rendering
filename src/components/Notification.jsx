@@ -35,12 +35,12 @@ const Notification = ({type, message, loading}) => {
 
    
    // Si les données ne sont pas affichées, afficher "chargement..."
-    if(!loading){
+    if(loading){
         return <p>Chargement...</p>;
     }
 
     const notif =(
-                    <div id={styles.divNotification} className={`bg-${classColorMessage} shadow-sm text-white`}>
+                    <div className={`bg-${classColorMessage} ${styles.divNotification} shadow-sm text-white`}>
                         <div id={styles.divButtonExit}>
                             <h3>{typeOfMessage} {type == 'success' ? '✓' :''}</h3>
                             <button className="close btn btn-light">X</button>
@@ -50,7 +50,7 @@ const Notification = ({type, message, loading}) => {
     );
 
 
-    return loading && notif;
+    return notif;
 };
 
 export default Notification;
