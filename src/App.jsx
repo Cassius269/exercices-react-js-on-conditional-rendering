@@ -1,14 +1,14 @@
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-import Notification from "./components/Notification"
 import Notifications from "./components/Notifications.jsx"
+import Basket from "./components/Basket.jsx"
 
 function App() {
   return (
     <>
       <Header />
       <main className="container">
-        <h1>hello world</h1>
+        <Basket />
         <Notifications />
       </main>
       <Footer />

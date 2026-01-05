@@ -8,6 +8,10 @@ const Header = () => {
                 <a href="/"><img className="ms-3" src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="logo" width={30}/></a>
             </div>
             <div className="d-flex justify-content-around gap-4 gap-md-5 align-items-center">
+                <div>
+                    <img src="https://svgsilh.com/svg/304640.svg" alt="icône de panier" width={38}/>
+                    <i className='ms-1 d-inline-block'>2</i>
+                </div>
                 <div className='d-flex flex-direction-row'>
                     <img id={styles.userIcon} src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/user-profile-icon.svg" alt="" width={30}/>
                     <button type="button" className="btn btn-secondary d-flex align-items-center gap-2 rounded-3 p-3 ps-5 text-white">S'inscrire</button>
